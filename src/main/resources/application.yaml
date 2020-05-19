@@ -1,0 +1,19 @@
+server:
+  port: 8082
+
+app:
+  server:
+    name: geenral
+    detail: this is general server
+
+spring:
+  profiles:
+    active:
+      - test
+  datasource:
+    url: jdbc:mysql://localhost:3306/general?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: ayaz1997
+
+  application:
+    name: This is the demo project for spring profiles
